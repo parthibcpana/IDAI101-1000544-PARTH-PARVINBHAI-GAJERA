@@ -1,0 +1,177 @@
+[
+  {
+    "id": "fa9d3ee8-2cc8-44d8-ba45-9f4920a98084",
+    "data": [
+      {
+        "text": "I have received ",
+        "userDefined": false
+      },
+      {
+        "text": "damaged goods",
+        "alias": "issue_type",
+        "meta": "@Issue_type",
+        "userDefined": true
+      },
+      {
+        "text": " for order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123456",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "93c87d2b-7bba-4603-bf83-b2af508944e6",
+    "data": [
+      {
+        "text": "I received a defective ",
+        "userDefined": false
+      },
+      {
+        "text": "Electronics",
+        "alias": "item_category",
+        "meta": "@Item_Category",
+        "userDefined": true
+      },
+      {
+        "text": " item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a9fe05db-ee10-414b-a81c-d2c6636610d5",
+    "data": [
+      {
+        "text": "The product in ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX555123",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "broken item",
+        "alias": "issue_type",
+        "meta": "@Issue_type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "989b9241-e4b5-4d9d-980c-539520a90aa9",
+    "data": [
+      {
+        "text": "My order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ123458",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " has arrived damaged",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "64b1527d-a3aa-4214-8518-e846c01cc72b",
+    "data": [
+      {
+        "text": "I have received a ",
+        "userDefined": false
+      },
+      {
+        "text": "Damaged Item",
+        "alias": "issue_type",
+        "meta": "@Issue_type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c1234507-4e56-4f89-2a34-456789012345",
+    "data": [
+      {
+        "text": "My ",
+        "userDefined": false
+      },
+      {
+        "text": "Fragile Item",
+        "alias": "item_category",
+        "meta": "@Item_Category",
+        "userDefined": true
+      },
+      {
+        "text": " package ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ999111",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " is broken",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d2345618-5f67-4090-3b45-567890123456",
+    "data": [
+      {
+        "text": "Report broken box for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX777888",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

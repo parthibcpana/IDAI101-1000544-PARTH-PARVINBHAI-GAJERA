@@ -1,0 +1,54 @@
+{
+  "id": "dbb002e3-7951-4087-9509-16a02e71794b",
+  "parentId": "9e32ed69-0448-48e1-b9e6-907a49b1d1f8",
+  "rootId": "9e32ed69-0448-48e1-b9e6-907a49b1d1f8",
+  "name": "Get_order_status - provide_id",
+  "auto": true,
+  "contexts": [
+    "Get_order_status-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "order.status.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "b8b1a369-3b37-440a-95fe-8f6e177aca6b",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Here's the latest update for order $order_id:\n\nStatus: Processing & On Schedule\n\nYour package is currently being processed at our central sorting facility and everything is moving along smoothly!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "87f53f39-b4d1-487b-8c63-5f04f935804a",
+  "parentId": "d9123045-2c34-4d56-8e90-2345a6789012",
+  "rootId": "d9123045-2c34-4d56-8e90-2345a6789012",
+  "name": "Reschedule_delivery - fallback",
+  "auto": true,
+  "contexts": [
+    "Reschedule_delivery-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "delivery.reschedule.invalid_id",
+      "affectedContexts": [
+        {
+          "name": "Reschedule_delivery-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "That doesn't look like a valid order ID. Could you double-check your order confirmation and send it again? (Example: FFX123456)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

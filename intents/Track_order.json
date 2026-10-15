@@ -1,0 +1,70 @@
+{
+  "id": "9f69051a-21a3-4f38-a6e3-86049d1dc6c1",
+  "name": "Track_order",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "track.order",
+      "affectedContexts": [
+        {
+          "name": "Track_order-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "affe34ee-e025-4178-b532-bfa5cb0df502",
+          "name": "order_id",
+          "required": false,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b1092837-4c56-4d78-9e01-234567890def",
+          "name": "delivery_status",
+          "required": false,
+          "dataType": "@Delivery_Status",
+          "value": "$delivery_status",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Sure thing! What is your order ID? (For example: FFX123456)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

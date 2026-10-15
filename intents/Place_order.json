@@ -1,0 +1,103 @@
+{
+  "id": "c953bead-3ab8-4f48-bfa4-156ee953aa05",
+  "name": "Place_order",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "order.place",
+      "affectedContexts": [
+        {
+          "name": "Place_order-followup",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "598535cf-e001-4e2b-9e35-f81a41991bac",
+          "name": "product",
+          "required": true,
+          "dataType": "@sys.any",
+          "value": "$product",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What product would you like to order today?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "dfd2a677-eff9-49ae-b314-4d00e66ef177",
+          "name": "quantity",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$quantity",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "How many units would you like to order?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "3e6a5f87-0778-467a-bc09-1ba961295a5e",
+          "name": "email",
+          "required": true,
+          "dataType": "@sys.email",
+          "value": "$email",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What email address should I send your order confirmation receipt to?"
+            },
+            {
+              "lang": "en",
+              "value": "That email address doesn't look quite right. Could you please re-enter your email address? (e.g. name@example.com)"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Great choice! Here are your order details:\n\n• Product: $product\n• Quantity: $quantity\n• Email: $email\n\nWould you like me to go ahead and place this order for you?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "02897ef2-16c2-4d79-b66b-8d96167496cb",
+    "data": [
+      {
+        "text": "How do I exchange order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123456",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " for a replacement?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "cf482c2f-4585-4d58-8a13-d68beca60b62",
+    "data": [
+      {
+        "text": "My item arrived ",
+        "userDefined": false
+      },
+      {
+        "text": "broken item",
+        "alias": "issue_type",
+        "meta": "@Issue_type",
+        "userDefined": true
+      },
+      {
+        "text": ", I need a new one sent out.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1cf3098a-2388-49d2-bc25-3d41168e5333",
+    "data": [
+      {
+        "text": "Requesting a replacement for order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ123458",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "21a7fc42-9461-434e-9394-edd41b0e40b2",
+    "data": [
+      {
+        "text": "Can you send a new item to replace my ",
+        "userDefined": false
+      },
+      {
+        "text": "Damaged Item",
+        "alias": "issue_type",
+        "meta": "@Issue_type",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "12cd76ab-df0b-4ea0-b671-53b53ad139f6",
+    "data": [
+      {
+        "text": "I want a replacement for order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123457",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a9012345-1b23-4c56-8d90-123456789012",
+    "data": [
+      {
+        "text": "Send a replacement ",
+        "userDefined": false
+      },
+      {
+        "text": "Electronics",
+        "alias": "item_category",
+        "meta": "@Item_Category",
+        "userDefined": true
+      },
+      {
+        "text": " item for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ888777",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b0123456-2c34-4d67-9e01-234567890123",
+    "data": [
+      {
+        "text": "I got the ",
+        "userDefined": false
+      },
+      {
+        "text": "Wrong Item",
+        "alias": "issue_type",
+        "meta": "@Issue_type",
+        "userDefined": true
+      },
+      {
+        "text": " for order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX444555",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": ", please replace it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c1234567-3d45-4e78-0f12-345678901234",
+    "data": [
+      {
+        "text": "Replace damaged ",
+        "userDefined": false
+      },
+      {
+        "text": "Fragile Item",
+        "alias": "item_category",
+        "meta": "@Item_Category",
+        "userDefined": true
+      },
+      {
+        "text": " order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ222111",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

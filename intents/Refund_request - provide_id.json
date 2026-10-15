@@ -1,0 +1,54 @@
+{
+  "id": "7c2ff9b3-8d83-47b3-ac48-0f866d6c5eed",
+  "parentId": "6382157d-f2a2-43f3-8c7c-680dae68a4ac",
+  "rootId": "6382157d-f2a2-43f3-8c7c-680dae68a4ac",
+  "name": "Refund_request - provide_id",
+  "auto": true,
+  "contexts": [
+    "Refund_request-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "refund.request.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d35ac592-19fb-44b0-a4a2-84ecdcd704ba",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I completely understand. I've initiated a full refund for order $order_id linked to $email. You will receive a confirmation email shortly, and the refund will reflect in your account within 3\u20135 business days!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

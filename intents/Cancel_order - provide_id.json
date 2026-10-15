@@ -1,0 +1,54 @@
+{
+  "id": "36c4f46a-6955-45a4-bc91-8c529fecfd4d",
+  "parentId": "e8129304-1b23-4c56-8d90-1234a5678901",
+  "rootId": "e8129304-1b23-4c56-8d90-1234a5678901",
+  "name": "Cancel_order - provide_id",
+  "auto": true,
+  "contexts": [
+    "Cancel_order-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "order.cancel.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3426434c-2172-4809-b5e2-da41f4c52752",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I've sent an urgent cancellation hold to our warehouse for order $order_id. As long as the delivery vehicle hasn't departed yet, your order will be cancelled and refunded immediately!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

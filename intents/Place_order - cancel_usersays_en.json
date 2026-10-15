@@ -1,0 +1,41 @@
+[
+  {
+    "id": "a1234051-3d45-4e51-af56-132da4560044",
+    "data": [
+      {
+        "text": "No, cancel it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b2345062-4e56-4f62-bf67-243eb5670055",
+    "data": [
+      {
+        "text": "Don't place the order",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c3456073-5f67-4073-c078-354fc6780066",
+    "data": [
+      {
+        "text": "Cancel request",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "f3b0df89-2733-4e51-975d-16acf04fe221",
+    "data": [
+      {
+        "text": "Can you help me with finding my parcel ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123456",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "902ae29b-a8ba-45b1-82af-d5ab89fd17a3",
+    "data": [
+      {
+        "text": "Help me I am unable to find my order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ123458",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "862c26ad-3613-4fa6-9b6f-e757204d54b3",
+    "data": [
+      {
+        "text": "I do not seem to find my order",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2b47227c-cbf8-409b-a2f4-42e94202855c",
+    "data": [
+      {
+        "text": "My order is missing",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a0129384-1b23-4c56-8d90-123456789012",
+    "data": [
+      {
+        "text": "My package ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX999888",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " never arrived",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b1230495-2c34-4d67-9e01-234567890123",
+    "data": [
+      {
+        "text": "I think my shipment ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ555444",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " is lost",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c2341506-3d45-4e78-0f12-345678901234",
+    "data": [
+      {
+        "text": "Report lost parcel for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX111333",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d3452617-4e56-4f89-1a23-456789012345",
+    "data": [
+      {
+        "text": "Package ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ666555",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " disappeared from doorstep",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "value": "Damaged Item",
+    "synonyms": [
+      "Damaged Item",
+      "broken item",
+      "broken product",
+      "broken goods",
+      "damaged goods",
+      "damaged package",
+      "defective item",
+      "cracked product",
+      "crushed box",
+      "shattered screen",
+      "smashed item",
+      "ruined package"
+    ]
+  },
+  {
+    "value": "Lost Package",
+    "synonyms": [
+      "Lost Package",
+      "Missing package",
+      "Parcel lost",
+      "missing order",
+      "lost parcel",
+      "never arrived",
+      "package stolen",
+      "never showed up",
+      "stolen parcel",
+      "disappeared shipment",
+      "cant find my parcel"
+    ]
+  },
+  {
+    "value": "Delivery delay",
+    "synonyms": [
+      "Delivery delay",
+      "late delivery",
+      "delayed package",
+      "running late",
+      "delayed shipment",
+      "delayed order",
+      "taking forever",
+      "overdue parcel",
+      "not arrived on time"
+    ]
+  },
+  {
+    "value": "Wrong Item",
+    "synonyms": [
+      "Wrong Item",
+      "wrong product received",
+      "incorrect item",
+      "different item",
+      "wrong package",
+      "received someone else's order",
+      "incorrect product in box"
+    ]
+  },
+  {
+    "value": "Package Tampered",
+    "synonyms": [
+      "Package Tampered",
+      "opened box",
+      "seal broken",
+      "tampered packaging",
+      "items stolen from box",
+      "empty box received"
+    ]
+  }
+]

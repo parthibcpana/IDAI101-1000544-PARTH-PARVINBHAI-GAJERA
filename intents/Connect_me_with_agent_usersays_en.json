@@ -1,0 +1,54 @@
+[
+  {
+    "id": "e2177954-f79a-4196-87f9-7bb25a475a03",
+    "data": [
+      {
+        "text": "I want to speak to a real person.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d1c6e946-19b8-4d5b-84cb-5b00a717b853",
+    "data": [
+      {
+        "text": "Transfer me to a live support agent.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6255af85-ebf3-4f09-ab55-47680b04139a",
+    "data": [
+      {
+        "text": "I need a human representative please.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7bafd755-954b-46f5-b16e-6aece77ffbaa",
+    "data": [
+      {
+        "text": "I want to chat with customer service.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

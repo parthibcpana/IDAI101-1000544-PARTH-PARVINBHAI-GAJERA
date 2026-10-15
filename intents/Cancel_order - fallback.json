@@ -1,0 +1,45 @@
+{
+  "id": "e452dcce-557d-4fff-83e8-7c65ce8c3472",
+  "parentId": "e8129304-1b23-4c56-8d90-1234a5678901",
+  "rootId": "e8129304-1b23-4c56-8d90-1234a5678901",
+  "name": "Cancel_order - fallback",
+  "auto": true,
+  "contexts": [
+    "Cancel_order-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "order.cancel.invalid_id",
+      "affectedContexts": [
+        {
+          "name": "Cancel_order-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "That doesn't look like a valid order ID format. Could you check your order email and send it again? (Example: FFX123456)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

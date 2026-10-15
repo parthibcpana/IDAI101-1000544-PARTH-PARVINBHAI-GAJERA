@@ -1,0 +1,39 @@
+{
+  "id": "b38192a0-4712-4b2a-8921-39c412571212",
+  "parentId": "c953bead-3ab8-4f48-bfa4-156ee953aa05",
+  "rootId": "c953bead-3ab8-4f48-bfa4-156ee953aa05",
+  "name": "Place_order - yes",
+  "auto": true,
+  "contexts": [
+    "Place_order-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "order.place.yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Great! Your order has been placed successfully. A confirmation email with your order tracking number has been sent to your email."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

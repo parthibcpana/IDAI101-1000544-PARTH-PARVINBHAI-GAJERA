@@ -1,0 +1,44 @@
+[
+  {
+    "value": "Morning",
+    "synonyms": [
+      "Morning",
+      "morning slot",
+      "9am-12pm",
+      "9 AM to 12 PM",
+      "before noon",
+      "early morning"
+    ]
+  },
+  {
+    "value": "Afternoon",
+    "synonyms": [
+      "Afternoon",
+      "afternoon slot",
+      "12pm-4pm",
+      "12 PM to 4 PM",
+      "after lunch"
+    ]
+  },
+  {
+    "value": "Evening",
+    "synonyms": [
+      "Evening",
+      "evening slot",
+      "4pm-8pm",
+      "4 PM to 8 PM",
+      "after work",
+      "late evening"
+    ]
+  },
+  {
+    "value": "Weekend",
+    "synonyms": [
+      "Weekend",
+      "Saturday",
+      "Sunday",
+      "weekend slot",
+      "on the weekend"
+    ]
+  }
+]

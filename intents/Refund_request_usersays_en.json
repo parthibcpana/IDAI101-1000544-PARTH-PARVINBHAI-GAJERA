@@ -1,0 +1,184 @@
+[
+  {
+    "id": "68570989-4e4b-4714-ba6a-833f9ea003ce",
+    "data": [
+      {
+        "text": "I want a refund for my delayed package ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123456",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "077561dd-73f6-4e8e-a347-5a4a08dc408c",
+    "data": [
+      {
+        "text": "How do I get my money back for order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ123458",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "298df235-0a39-4433-a85a-b46bc824c55a",
+    "data": [
+      {
+        "text": "Cancel my order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123457",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " and issue a refund to ",
+        "userDefined": false
+      },
+      {
+        "text": "user@example.com",
+        "alias": "email",
+        "meta": "@sys.email",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a1239012-3b45-4c67-8d90-123456789012",
+    "data": [
+      {
+        "text": "Requesting full refund for order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ777666",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b2340123-4c56-4d78-9e01-234567890123",
+    "data": [
+      {
+        "text": "I need my payment returned for order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX555444",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "john@example.com",
+        "alias": "email",
+        "meta": "@sys.email",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c3451234-5d67-4e89-0f12-345678901234",
+    "data": [
+      {
+        "text": "Refund money for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ333222",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d4562345-6e78-4f90-1a23-456789012345",
+    "data": [
+      {
+        "text": "Can I claim a reimbursement for my missing package ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX888999",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e5673456-7f89-4090-2b34-567890123456",
+    "data": [
+      {
+        "text": "Send refund to ",
+        "userDefined": false
+      },
+      {
+        "text": "support@test.com",
+        "alias": "email",
+        "meta": "@sys.email",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ444555",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

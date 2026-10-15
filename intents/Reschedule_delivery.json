@@ -1,0 +1,89 @@
+{
+  "id": "d9123045-2c34-4d56-8e90-2345a6789012",
+  "name": "Reschedule_delivery",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "delivery.reschedule",
+      "affectedContexts": [
+        {
+          "name": "Reschedule_delivery-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "b0123056-3d45-4e67-9f01-3456b7890123",
+          "name": "order_id",
+          "required": false,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c1234067-4e56-4f78-0a12-4567c8901234",
+          "name": "new_date",
+          "required": true,
+          "dataType": "@sys.date",
+          "value": "$new_date",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What new date would work best for your delivery?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d2345178-5f67-4089-1b23-5678d9012345",
+          "name": "delivery_slot",
+          "required": false,
+          "dataType": "@Delivery_Slot",
+          "value": "$delivery_slot",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I can definitely help you change your delivery date! What's your order ID?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

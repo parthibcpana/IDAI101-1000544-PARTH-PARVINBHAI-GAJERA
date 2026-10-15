@@ -1,0 +1,54 @@
+{
+  "id": "b12ee942-71ce-462b-ac6b-d2acc0fc22b4",
+  "parentId": "11db0bb1-e302-49fb-8335-7eb27da64b2e",
+  "rootId": "11db0bb1-e302-49fb-8335-7eb27da64b2e",
+  "name": "Check_delivery_delay - provide_id",
+  "auto": true,
+  "contexts": [
+    "Check_delivery_delay-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "delivery.delay_check.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d0dc239b-cc9b-45d4-8597-1a25a9479c7d",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'm really sorry for the delay with order $order_id! It looks like severe weather caused a brief slowdown at our regional hub, but your shipment is back on track now and moving towards your local delivery team."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

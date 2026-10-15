@@ -1,0 +1,75 @@
+{
+  "id": "566182f7-80bc-451a-ac21-f335ec6b2a1c",
+  "name": "Replacement_request",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "replacement.request",
+      "affectedContexts": [
+        {
+          "name": "Replacement_request-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "5eb9fa65-e6cd-4592-8e7d-b48a6118f14d",
+          "name": "order_id",
+          "required": false,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d0844beb-870a-43af-8b94-19afdbce00e2",
+          "name": "issue_type",
+          "required": true,
+          "dataType": "@Issue_type",
+          "value": "$issue_type",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What problem occurred with your item (e.g. damaged item, wrong item)?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'd be glad to get a replacement arranged for you! What's your order ID?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

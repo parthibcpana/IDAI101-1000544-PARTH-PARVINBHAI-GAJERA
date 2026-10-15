@@ -1,0 +1,45 @@
+{
+  "id": "e762779b-39d3-4557-afac-39fcc0098ab0",
+  "parentId": "9f69051a-21a3-4f38-a6e3-86049d1dc6c1",
+  "rootId": "9f69051a-21a3-4f38-a6e3-86049d1dc6c1",
+  "name": "Track_order - fallback",
+  "auto": true,
+  "contexts": [
+    "Track_order-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "track.order.invalid_id",
+      "affectedContexts": [
+        {
+          "name": "Track_order-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "That doesn't look like a valid order ID format. Could you please check your order receipt and send your 9-character order ID again? (Example format: FFX123456 or FFZ987654)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

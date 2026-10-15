@@ -1,0 +1,9 @@
+{
+  "id": "e1a90214-3b45-4c67-8d90-1234567890ab",
+  "name": "Delivery_Status",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

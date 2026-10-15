@@ -1,0 +1,45 @@
+{
+  "id": "02659cfa-8b0e-4891-afb0-699d968f1f89",
+  "parentId": "9fbf1a40-5910-47c0-8760-98156533854b",
+  "rootId": "9fbf1a40-5910-47c0-8760-98156533854b",
+  "name": "Report_Missing_Order - fallback",
+  "auto": true,
+  "contexts": [
+    "Report_Missing_Order-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "report.missing_order.invalid_id",
+      "affectedContexts": [
+        {
+          "name": "Report_Missing_Order-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "That doesn't look like a valid order ID format. Could you check your order email and send it again? (Example: FFX123456)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

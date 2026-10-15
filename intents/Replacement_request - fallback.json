@@ -1,0 +1,45 @@
+{
+  "id": "d69dbddd-af08-4e1f-b486-d199c06754e2",
+  "parentId": "566182f7-80bc-451a-ac21-f335ec6b2a1c",
+  "rootId": "566182f7-80bc-451a-ac21-f335ec6b2a1c",
+  "name": "Replacement_request - fallback",
+  "auto": true,
+  "contexts": [
+    "Replacement_request-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "replacement.request.invalid_id",
+      "affectedContexts": [
+        {
+          "name": "Replacement_request-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "That doesn't match a valid order ID format. Please check your order receipt and re-enter the ID. (Example format: FFX123456)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

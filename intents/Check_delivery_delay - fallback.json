@@ -1,0 +1,45 @@
+{
+  "id": "4846a952-c46b-4f98-993a-97159249bbfc",
+  "parentId": "11db0bb1-e302-49fb-8335-7eb27da64b2e",
+  "rootId": "11db0bb1-e302-49fb-8335-7eb27da64b2e",
+  "name": "Check_delivery_delay - fallback",
+  "auto": true,
+  "contexts": [
+    "Check_delivery_delay-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "delivery.delay_check.invalid_id",
+      "affectedContexts": [
+        {
+          "name": "Check_delivery_delay-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "That doesn't look like a valid order ID format. Could you re-check your order confirmation and enter the ID again? (Example format: FFX123456)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

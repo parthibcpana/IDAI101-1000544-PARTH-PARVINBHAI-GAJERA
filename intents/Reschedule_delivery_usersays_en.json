@@ -1,0 +1,122 @@
+[
+  {
+    "id": "e1234078-5f67-4089-1b23-5678d9012345",
+    "data": [
+      {
+        "text": "Reschedule my delivery for order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123456",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "tomorrow",
+        "alias": "new_date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f2345089-6078-4190-2c34-6789e0123456",
+    "data": [
+      {
+        "text": "Can I change the delivery date for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ123458",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c7890163-0312-4545-8090-012345678901",
+    "data": [
+      {
+        "text": "Please move delivery of ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX555666",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Friday",
+        "alias": "new_date",
+        "meta": "@sys.date",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Morning",
+        "alias": "delivery_slot",
+        "meta": "@Delivery_Slot",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d8901274-1423-4656-91a1-123456789012",
+    "data": [
+      {
+        "text": "Change delivery slot for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ222333",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Evening",
+        "alias": "delivery_slot",
+        "meta": "@Delivery_Slot",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

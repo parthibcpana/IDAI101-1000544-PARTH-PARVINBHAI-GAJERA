@@ -1,0 +1,41 @@
+[
+  {
+    "id": "78129034-7a12-4c28-9f23-810a72120011",
+    "data": [
+      {
+        "text": "Yes, confirm order",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "89123049-1b23-4c39-9d34-910b82340022",
+    "data": [
+      {
+        "text": "Yes please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "90123050-2c34-4d40-9e45-021c93450033",
+    "data": [
+      {
+        "text": "Go ahead and place it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

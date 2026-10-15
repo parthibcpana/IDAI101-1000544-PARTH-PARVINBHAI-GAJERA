@@ -1,0 +1,28 @@
+[
+  {
+    "id": "673f8a0b-193e-4b2a-921c-84d9136152a1",
+    "data": [
+      {
+        "text": "Can you give me more details about the location?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e9381c6d-319a-4c21-b845-a764d2719ba4",
+    "data": [
+      {
+        "text": "When will it arrive at my doorstep?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

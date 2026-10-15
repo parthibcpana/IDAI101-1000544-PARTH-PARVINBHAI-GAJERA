@@ -1,0 +1,45 @@
+{
+  "id": "0b7f74d4-5235-4849-a450-3436e734f8f5",
+  "parentId": "9e32ed69-0448-48e1-b9e6-907a49b1d1f8",
+  "rootId": "9e32ed69-0448-48e1-b9e6-907a49b1d1f8",
+  "name": "Get_order_status - fallback",
+  "auto": true,
+  "contexts": [
+    "Get_order_status-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "order.status.invalid_id",
+      "affectedContexts": [
+        {
+          "name": "Get_order_status-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "That ID doesn't look quite right. Could you double-check your order receipt and send it again? (Example format: FFX123456 or FFZ987654)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

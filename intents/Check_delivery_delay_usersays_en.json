@@ -1,0 +1,130 @@
+[
+  {
+    "id": "7089a34a-956e-4953-9b14-77f475f02cae",
+    "data": [
+      {
+        "text": "Order is late. What is the current status of ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123456",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a7cd3661-fe5b-4cb6-912c-4d98c9af6f4f",
+    "data": [
+      {
+        "text": "Why is my parcel late?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6b8343ee-ac30-46e4-80c8-c501421ccb39",
+    "data": [
+      {
+        "text": "My order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123459",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " hasn't arrived yet",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b1aa5207-8ae1-4323-a4de-b43c0b435ba6",
+    "data": [
+      {
+        "text": "My order is late is there a reason?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e3456729-6f78-4101-4c56-678901234567",
+    "data": [
+      {
+        "text": "Why is my delivery ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ888999",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " delayed for the ",
+        "userDefined": false
+      },
+      {
+        "text": "Morning",
+        "alias": "delivery_slot",
+        "meta": "@Delivery_Slot",
+        "userDefined": true
+      },
+      {
+        "text": " slot?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f4567830-7089-4212-5d67-789012345678",
+    "data": [
+      {
+        "text": "My package scheduled for ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "alias": "delivery_date",
+        "meta": "@sys.date",
+        "userDefined": true
+      },
+      {
+        "text": " is running late",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

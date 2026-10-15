@@ -1,0 +1,9 @@
+{
+  "id": "883491c6-fa14-4989-a684-fba453f9d405",
+  "name": "Issue_type",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

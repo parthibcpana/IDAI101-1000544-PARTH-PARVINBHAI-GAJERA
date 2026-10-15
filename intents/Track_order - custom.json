@@ -1,0 +1,39 @@
+{
+  "id": "e4a21f85-9b21-4d1a-8e2b-7c3902f891a2",
+  "parentId": "9f69051a-21a3-4f38-a6e3-86049d1dc6c1",
+  "rootId": "9f69051a-21a3-4f38-a6e3-86049d1dc6c1",
+  "name": "Track_order - custom",
+  "auto": true,
+  "contexts": [
+    "Track_order-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "track.order.more_details",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Your shipment is currently in transit with our logistics network. Would you like me to send live SMS updates or transfer you to a support specialist?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

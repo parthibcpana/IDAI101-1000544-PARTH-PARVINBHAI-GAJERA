@@ -1,0 +1,56 @@
+[
+  {
+    "value": "In Transit",
+    "synonyms": [
+      "In Transit",
+      "on the way",
+      "moving between hubs",
+      "shipped",
+      "out for transport",
+      "en route",
+      "on truck"
+    ]
+  },
+  {
+    "value": "Out for Delivery",
+    "synonyms": [
+      "Out for Delivery",
+      "with delivery driver",
+      "arriving today",
+      "on driver truck",
+      "out for final dropoff"
+    ]
+  },
+  {
+    "value": "Delayed",
+    "synonyms": [
+      "Delayed",
+      "running late",
+      "held at facility",
+      "postponed",
+      "stuck at hub",
+      "weather delay"
+    ]
+  },
+  {
+    "value": "Delivered",
+    "synonyms": [
+      "Delivered",
+      "dropped off",
+      "handed to recipient",
+      "left at front door",
+      "marked delivered",
+      "received"
+    ]
+  },
+  {
+    "value": "Returned to Facility",
+    "synonyms": [
+      "Returned to Facility",
+      "returned to warehouse",
+      "failed delivery attempt",
+      "sent back",
+      "returned to sender"
+    ]
+  }
+]

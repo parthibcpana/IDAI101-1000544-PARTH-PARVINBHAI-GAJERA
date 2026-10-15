@@ -1,0 +1,246 @@
+[
+  {
+    "id": "ad372507-0a65-472b-bdc7-1e7565ad0da8",
+    "data": [
+      {
+        "text": "Track my package ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123456",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "87ad54dc-3f95-4741-8abd-b5b87c399f1a",
+    "data": [
+      {
+        "text": "Where is my package?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "203f8ea8-8ebb-47ce-ab1c-46fbeb00fec8",
+    "data": [
+      {
+        "text": "Can you track my order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ987654",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c9500105-3a7b-4cdb-96e3-b55bc0b7709a",
+    "data": [
+      {
+        "text": "I want to track my order",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "399edce0-08d5-48dc-8965-891c1bcc0e2d",
+    "data": [
+      {
+        "text": "Where is my order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX555123",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f9012384-1b23-4c56-9d01-123456789012",
+    "data": [
+      {
+        "text": "Is order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX444888",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " currently ",
+        "userDefined": false
+      },
+      {
+        "text": "In Transit",
+        "alias": "delivery_status",
+        "meta": "@Delivery_Status",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a0123495-2c34-4d67-0e12-234567890123",
+    "data": [
+      {
+        "text": "Check live tracking location for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ666777",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b1234506-3d45-4e78-1f23-345678901234",
+    "data": [
+      {
+        "text": "I need tracking updates for my shipment ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX999000",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c2345617-4e56-4f89-2012-456789012345",
+    "data": [
+      {
+        "text": "Please check if ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ111222",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "Out for Delivery",
+        "alias": "delivery_status",
+        "meta": "@Delivery_Status",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d3456728-5f67-4090-3123-567890123456",
+    "data": [
+      {
+        "text": "What is the current location of order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX333222",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e4567839-6078-4101-4234-678901234567",
+    "data": [
+      {
+        "text": "Where did my parcel ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ777888",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " reach?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f5678940-7189-4212-5345-789012345678",
+    "data": [
+      {
+        "text": "Track order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123999",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

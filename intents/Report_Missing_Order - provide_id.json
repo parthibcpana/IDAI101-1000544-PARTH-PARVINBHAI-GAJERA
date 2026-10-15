@@ -1,0 +1,54 @@
+{
+  "id": "e4ff80c9-5cfa-45ee-a115-d7bfebac620e",
+  "parentId": "9fbf1a40-5910-47c0-8760-98156533854b",
+  "rootId": "9fbf1a40-5910-47c0-8760-98156533854b",
+  "name": "Report_Missing_Order - provide_id",
+  "auto": true,
+  "contexts": [
+    "Report_Missing_Order-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "report.missing_order.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "53a5d082-be0c-4e96-988d-578e471070e3",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Oh no, that's so frustrating! Let me start a missing parcel investigation for order $order_id right away. I've flagged this with our local dispatch team to check the vehicle and delivery location immediately. We'll track this down for you!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

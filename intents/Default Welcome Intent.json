@@ -1,0 +1,40 @@
+{
+  "id": "407887a4-86bf-42b2-8c15-29c49d07dd5e",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Hi there! Welcome to FleetFix AI — your 24/7 delivery and logistics assistant for SwiftShip Logistics.\n\nHow can I help you today? You can ask me to:\n• Track an order (e.g., 'Where is my order FFX123456?')\n• Report a damaged or missing package\n• Request a refund or replacement\n• Check delivery delays or reschedule\n• Connect with a live support agent",
+            "Hello! I'm FleetFix AI, ready to assist with all your parcel and shipment queries.\n\nWhat would you like assistance with today?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

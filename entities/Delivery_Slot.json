@@ -1,0 +1,9 @@
+{
+  "id": "f2b01325-4c56-4d78-9e01-2345678901bc",
+  "name": "Delivery_Slot",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

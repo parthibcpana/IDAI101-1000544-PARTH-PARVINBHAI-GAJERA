@@ -1,0 +1,39 @@
+{
+  "id": "c4721950-8b23-4c3a-9e45-401d83241213",
+  "parentId": "c953bead-3ab8-4f48-bfa4-156ee953aa05",
+  "rootId": "c953bead-3ab8-4f48-bfa4-156ee953aa05",
+  "name": "Place_order - cancel",
+  "auto": true,
+  "contexts": [
+    "Place_order-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "order.place.cancel",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "No problem! I've cancelled your order request. Is there anything else I can help you with today?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

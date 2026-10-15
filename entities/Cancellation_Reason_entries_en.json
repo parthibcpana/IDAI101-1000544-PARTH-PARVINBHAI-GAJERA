@@ -1,0 +1,36 @@
+[
+  {
+    "value": "Delayed Delivery",
+    "synonyms": [
+      "Delayed Delivery",
+      "taking too long",
+      "delivery delayed",
+      "too late"
+    ]
+  },
+  {
+    "value": "Ordered by Mistake",
+    "synonyms": [
+      "Ordered by Mistake",
+      "accidental order",
+      "wrong purchase",
+      "didn't mean to order"
+    ]
+  },
+  {
+    "value": "Address Error",
+    "synonyms": [
+      "Address Error",
+      "wrong shipping address",
+      "incorrect destination"
+    ]
+  },
+  {
+    "value": "Found Cheaper",
+    "synonyms": [
+      "Found Cheaper",
+      "better price elsewhere",
+      "found cheaper deal"
+    ]
+  }
+]

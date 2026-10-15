@@ -1,0 +1,37 @@
+{
+  "id": "ce93202f-bc57-40b2-b47a-82677431ea22",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'm sorry, I didn't quite catch that! You can ask me to track an order, report a damaged item, request a refund, reschedule delivery, or speak with a live agent.",
+            "I missed that phrase. Could you rephrase your request or share your order ID (e.g., FFX123456)?",
+            "Hmm, I didn't get that. I can help you track parcels, process damage reports, or transfer you to a human agent—what would you like to do?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

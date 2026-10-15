@@ -1,0 +1,53 @@
+[
+  {
+    "value": "Electronics",
+    "synonyms": [
+      "Electronics",
+      "electronic device",
+      "gadgets",
+      "laptop",
+      "phone",
+      "camera"
+    ]
+  },
+  {
+    "value": "Apparel",
+    "synonyms": [
+      "Apparel",
+      "clothing",
+      "clothes",
+      "shoes",
+      "wearables"
+    ]
+  },
+  {
+    "value": "Documents",
+    "synonyms": [
+      "Documents",
+      "paperwork",
+      "legal papers",
+      "contract",
+      "envelope"
+    ]
+  },
+  {
+    "value": "Fragile Item",
+    "synonyms": [
+      "Fragile Item",
+      "glassware",
+      "delicate product",
+      "fragile goods",
+      "ceramics"
+    ]
+  },
+  {
+    "value": "Perishable Goods",
+    "synonyms": [
+      "Perishable Goods",
+      "food item",
+      "groceries",
+      "medicines",
+      "fresh produce"
+    ]
+  }
+]

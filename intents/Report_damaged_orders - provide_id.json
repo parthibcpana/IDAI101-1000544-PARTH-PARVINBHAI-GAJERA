@@ -1,0 +1,54 @@
+{
+  "id": "53e8bd97-7cd0-466a-b0cd-94468defaa15",
+  "parentId": "0abab0c9-c7bb-4e47-849f-426002b0a699",
+  "rootId": "0abab0c9-c7bb-4e47-849f-426002b0a699",
+  "name": "Report_damaged_orders - provide_id",
+  "auto": true,
+  "contexts": [
+    "Report_damaged_orders-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "report.damaged_order.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f7863900-d9f1-4656-8989-7f02c02eccb3",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Oh no, I'm so sorry your package arrived damaged! That's definitely not the experience we want for you. I've logged a damage claim for order $order_id. Don't worry at all\u2014our claims team will arrange a free replacement or full refund right away!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "id": "f1234051-2e34-4f56-8a90-4567d8901234",
+    "data": [
+      {
+        "text": "Cancel my order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123456",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "g2345062-3f45-4067-9b01-5678e9012345",
+    "data": [
+      {
+        "text": "I want to cancel order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ123458",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "h3456073-4056-4178-0c12-6789f0123456",
+    "data": [
+      {
+        "text": "Can I cancel my shipment?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a5678941-8190-4323-6e78-890123456789",
+    "data": [
+      {
+        "text": "Please cancel order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX333444",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " due to ",
+        "userDefined": false
+      },
+      {
+        "text": "Delayed Delivery",
+        "alias": "reason",
+        "meta": "@Cancellation_Reason",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b6789052-9201-4434-7f89-901234567890",
+    "data": [
+      {
+        "text": "I ",
+        "userDefined": false
+      },
+      {
+        "text": "Ordered by Mistake",
+        "alias": "reason",
+        "meta": "@Cancellation_Reason",
+        "userDefined": true
+      },
+      {
+        "text": ", cancel order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ111222",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

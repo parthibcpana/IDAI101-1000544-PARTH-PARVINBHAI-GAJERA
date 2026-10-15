@@ -1,0 +1,9 @@
+{
+  "id": "b4d23547-6e78-4f90-1a23-4567890123de",
+  "name": "Cancellation_Reason",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "66952ef2-6846-4226-bad5-b9d08fc230fe",
+    "data": [
+      {
+        "text": "Can I check my order status for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX123457",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "57bf37d2-c75c-4650-9a3e-0456e1474d3b",
+    "data": [
+      {
+        "text": "I want to know my order status",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "21447c8e-008b-4da1-95bd-741981cee8b2",
+    "data": [
+      {
+        "text": "Check my order status ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ123458",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "cbdbb0d5-7e19-48b5-ad00-93d372beb47c",
+    "data": [
+      {
+        "text": "What is the status of my order?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "0eed05b4-b0e1-46ac-934b-5a3585449143",
+    "data": [
+      {
+        "text": "What is my order status?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a1234901-2b34-4c56-9d01-123456789012",
+    "data": [
+      {
+        "text": "Is parcel ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX888777",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " ready for dispatch?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b2345012-3c45-4d67-0e12-234567890123",
+    "data": [
+      {
+        "text": "Give me the status report for ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ333444",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c3456123-4d56-4e78-1f23-345678901234",
+    "data": [
+      {
+        "text": "Has order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX555444",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      },
+      {
+        "text": " been ",
+        "userDefined": false
+      },
+      {
+        "text": "Delivered",
+        "alias": "delivery_status",
+        "meta": "@Delivery_Status",
+        "userDefined": true
+      },
+      {
+        "text": " yet?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d4567234-5e67-4f89-2012-456789012345",
+    "data": [
+      {
+        "text": "Check status for shipment ",
+        "userDefined": false
+      },
+      {
+        "text": "FFZ999888",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e5678345-6f78-4090-3123-567890123456",
+    "data": [
+      {
+        "text": "Show progress for my order ",
+        "userDefined": false
+      },
+      {
+        "text": "FFX111222",
+        "alias": "order_id",
+        "meta": "@Order_ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

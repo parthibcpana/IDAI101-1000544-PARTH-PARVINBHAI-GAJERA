@@ -1,0 +1,84 @@
+{
+  "id": "11db0bb1-e302-49fb-8335-7eb27da64b2e",
+  "name": "Check_delivery_delay",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "delivery.delay_check",
+      "affectedContexts": [
+        {
+          "name": "Check_delivery_delay-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "1b15e6ff-ca97-4340-b92f-ccb8640bdb18",
+          "name": "order_id",
+          "required": false,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "6964b776-5362-4b0c-8193-39f95d5210d0",
+          "name": "delivery_date",
+          "required": false,
+          "dataType": "@sys.date",
+          "value": "$delivery_date",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "e3019284-6e78-4f90-1a23-4567890123fa",
+          "name": "delivery_slot",
+          "required": false,
+          "dataType": "@Delivery_Slot",
+          "value": "$delivery_slot",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Oh, I'm really sorry your package is taking longer than expected! What's your order ID?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

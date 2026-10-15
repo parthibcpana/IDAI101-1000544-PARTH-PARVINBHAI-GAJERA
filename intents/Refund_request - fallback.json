@@ -1,0 +1,45 @@
+{
+  "id": "84fd016d-9dcd-4666-8ae0-093c654b7eab",
+  "parentId": "6382157d-f2a2-43f3-8c7c-680dae68a4ac",
+  "rootId": "6382157d-f2a2-43f3-8c7c-680dae68a4ac",
+  "name": "Refund_request - fallback",
+  "auto": true,
+  "contexts": [
+    "Refund_request-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "refund.request.invalid_id",
+      "affectedContexts": [
+        {
+          "name": "Refund_request-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "That doesn't look like a valid order ID format. Could you double-check your receipt and try entering it again? (e.g. FFX123456)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "7627c226-8704-46e1-879c-dd712399aa98",
+    "data": [
+      {
+        "text": "Can i order this product?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "13512284-d5f4-41ef-97f5-559bda9f70f3",
+    "data": [
+      {
+        "text": "How can I order a product",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6d5c6dc0-7fd4-4b5b-b696-5545f3e27546",
+    "data": [
+      {
+        "text": "I want to order a product",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "897fa350-b29d-48c0-8b97-94678b1b5fbd",
+    "data": [
+      {
+        "text": "I want to buy something",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8124edf6-b152-4b1d-aa83-aa7fdcc21950",
+    "data": [
+      {
+        "text": "I want to place an order",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e1239012-3b45-4c67-8d90-123456789012",
+    "data": [
+      {
+        "text": "I want to buy ",
+        "userDefined": false
+      },
+      {
+        "text": "2",
+        "alias": "quantity",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " units of ",
+        "userDefined": false
+      },
+      {
+        "text": "laptop",
+        "alias": "product",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f2340123-4c56-4d78-9e01-234567890123",
+    "data": [
+      {
+        "text": "Place an order for ",
+        "userDefined": false
+      },
+      {
+        "text": "headphones",
+        "alias": "product",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and send confirmation to ",
+        "userDefined": false
+      },
+      {
+        "text": "alex@test.com",
+        "alias": "email",
+        "meta": "@sys.email",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "g3451234-5d67-4e89-0f12-345678901234",
+    "data": [
+      {
+        "text": "Order ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "quantity",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " boxes of ",
+        "userDefined": false
+      },
+      {
+        "text": "paperwork",
+        "alias": "product",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

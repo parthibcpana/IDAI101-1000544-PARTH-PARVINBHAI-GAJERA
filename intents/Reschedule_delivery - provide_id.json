@@ -1,0 +1,54 @@
+{
+  "id": "23742530-381a-4fea-b9a0-fd53dbb45e1a",
+  "parentId": "d9123045-2c34-4d56-8e90-2345a6789012",
+  "rootId": "d9123045-2c34-4d56-8e90-2345a6789012",
+  "name": "Reschedule_delivery - provide_id",
+  "auto": true,
+  "contexts": [
+    "Reschedule_delivery-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "delivery.reschedule.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "68854a67-ebbb-4c0a-8f50-67db1dd71591",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Sure thing! I've updated the delivery schedule for order $order_id to $new_date. Our driver will make sure to drop off your package on your requested date!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

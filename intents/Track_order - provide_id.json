@@ -1,0 +1,54 @@
+{
+  "id": "e6124f35-9033-4983-9e34-6f7fa7c9af6f",
+  "parentId": "9f69051a-21a3-4f38-a6e3-86049d1dc6c1",
+  "rootId": "9f69051a-21a3-4f38-a6e3-86049d1dc6c1",
+  "name": "Track_order - provide_id",
+  "auto": true,
+  "contexts": [
+    "Track_order-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "track.order.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1ef4b2df-243d-4b8c-a771-5ec13536013a",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Got it! Let me check the live status of order $order_id for you real quick... Good news! Your package is currently out with our driver and on track for delivery today. Is there anything else you'd like to check on this order?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

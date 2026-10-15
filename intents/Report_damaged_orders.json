@@ -1,0 +1,89 @@
+{
+  "id": "0abab0c9-c7bb-4e47-849f-426002b0a699",
+  "name": "Report_damaged_orders",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "report.damaged_order",
+      "affectedContexts": [
+        {
+          "name": "Report_damaged_orders-asking_id",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "bd550e1c-7bdd-4345-bf65-10dae04f11a4",
+          "name": "order_id",
+          "required": false,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "e7b8c21a-45d2-43f1-b998-319a2c4e611f",
+          "name": "issue_type",
+          "required": true,
+          "dataType": "@Issue_type",
+          "value": "$issue_type",
+          "defaultValue": "Damaged Item",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What kind of damage occurred to your package (e.g. broken item, crushed box)?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c2019283-5d67-4e89-0f12-3456789012ef",
+          "name": "item_category",
+          "required": false,
+          "dataType": "@Item_Category",
+          "value": "$item_category",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Oh no, I'm so sorry your package arrived in poor condition! Could you share your order ID with me? (e.g. FFX123456)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

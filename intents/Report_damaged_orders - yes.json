@@ -1,0 +1,39 @@
+{
+  "id": "b1029384-9234-4d56-a012-2345678901ab",
+  "parentId": "0abab0c9-c7bb-4e47-849f-426002b0a699",
+  "rootId": "0abab0c9-c7bb-4e47-849f-426002b0a699",
+  "name": "Report_damaged_orders - yes",
+  "auto": true,
+  "contexts": [
+    "Report_damaged_orders-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "report.damaged_order.confirm",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Your damage claim has been confirmed. A prepaid return shipping label and replacement dispatch order have been emailed to your account."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

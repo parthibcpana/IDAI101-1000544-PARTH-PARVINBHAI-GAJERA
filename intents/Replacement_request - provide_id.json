@@ -1,0 +1,54 @@
+{
+  "id": "e6503f44-7834-4cab-9e32-d6845d5e2ffc",
+  "parentId": "566182f7-80bc-451a-ac21-f335ec6b2a1c",
+  "rootId": "566182f7-80bc-451a-ac21-f335ec6b2a1c",
+  "name": "Replacement_request - provide_id",
+  "auto": true,
+  "contexts": [
+    "Replacement_request-asking_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "replacement.request.provide_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1fba0258-86cf-4993-8946-c61d50443b3e",
+          "name": "order_id",
+          "required": true,
+          "dataType": "@Order_ID",
+          "value": "$order_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "No problem at all! I've placed a priority replacement request for order $order_id. We'll get a fresh package dispatched to you right away with expedited shipping!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

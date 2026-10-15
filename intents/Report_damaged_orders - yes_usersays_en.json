@@ -1,0 +1,41 @@
+[
+  {
+    "id": "c2130495-0345-4e67-b123-3456789012bc",
+    "data": [
+      {
+        "text": "Yes, submit the claim",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d3241506-1456-4f78-c234-4567890123cd",
+    "data": [
+      {
+        "text": "Confirm damage report",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e4352617-2567-4089-d345-5678901234de",
+    "data": [
+      {
+        "text": "Send me replacement",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
