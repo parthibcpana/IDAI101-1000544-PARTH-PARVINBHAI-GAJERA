@@ -12,46 +12,50 @@
 
 ---
 
-## 📌 Executive Summary & Problem Engineering
+## Project Overview and Operational Problem Analysis
 
-Modern supply chains and last-mile courier services operate under high velocity and compressed fulfillment windows. **SwiftShip Logistics Pvt. Ltd.** handles tens of thousands of daily consignments across intra-city and inter-state hubs. Rapid scaling introduced severe friction points across customer-facing delivery communications:
+Last-mile delivery networks operate under strict time windows and high package volumes. SwiftShip Logistics Pvt. Ltd. processes thousands of shipments every day across inter-city and intra-city logistics hubs. As delivery volumes increased, customer support channels experienced significant strain due to repetitive inquiries and delayed ticket processing.
 
-### 1. The Industry Problem Space
-* **WISMO Query Overload:** Between 45% to 60% of inbound customer queries represent simple *"Where Is My Order?"* (WISMO) requests, creating massive queues that block urgent escalations.
-* **Peak Delivery Delays:** Traffic gridlock, regional weather disruptions, and sorting facility backlogs trigger waves of anxious inquiries that human support staff cannot absorb in real time.
-* **Damaged & Misplaced Shipments:** Reporting damaged or missing items historically required multi-step email chains, manual verification, and 48–72 hour resolution cycles, inflating customer dissatisfaction.
-* **Support Agent Burnout:** Repetitive tier-1 inquiries drain support resources, increasing operational overhead while worsening First Response Times (FRT) and Mean Time to Resolution (MTTR).
+### Industry Challenges in Last-Mile Logistics
 
-### 2. FleetFix AI Solution Scope
-FleetFix AI acts as an autonomous first-line conversational interface integrated directly into the customer dispatch lifecycle:
-* **Instantaneous 24/7 Query Triage:** Immediate fulfillment of package tracking, delay explanations, and rescheduling requests without queue latency.
-* **Deterministic Identifier Validation:** Real-time verification of consignment IDs using regular expression pattern engines to prevent broken fulfillment lookups.
-* **Self-Healing Interaction Loops:** Dynamic context tracking that traps malformed user inputs and reprompts iteratively until a valid identifier is supplied.
-* **Structured Claim Automation:** Guided diagnostic trees for damaged, lost, or misplaced orders, immediately offering refund or replacement workflows.
-* **Frictionless Human Escalation:** Clean handoff transitions to human dispatch officers with full conversational context when algorithmic resolution reaches its boundary.
+Customer support data in shipping and e-commerce consistently indicates that between 45% and 60% of inbound communications consist of "Where Is My Order" (WISMO) requests. In peak fulfillment periods, weather-related delays, traffic congestion, and terminal transfers generate surges in customer inquiries that overwhelm manual support teams.
 
----
+When packages arrive damaged, stolen, or delayed, traditional resolution pipelines require customers to submit tickets via email or web forms. This multi-step process introduces 48 to 72 hours of turnaround latency, directly contributing to customer churn and low service ratings. Meanwhile, front-line support staff spend most of their working hours looking up order numbers instead of handling complex logistics exceptions.
 
-## 🎨 Visual Storyboard & Infographic (Canva Integration)
+### FleetFix AI Scope and Objectives
 
-The conceptual design and conversational mapping for FleetFix AI originated during the **FA-1 Design Phase** using visual storyboards and infographics.
+FleetFix AI is engineered as an automated first-line conversational interface integrated directly into the customer dispatch lifecycle. The system is designed to fulfill several operational goals:
 
-> [!NOTE]  
-> **Canva Storyboard & Infographic Link:**  
-> [View Visual Storyboard & Infographic on Canva](https://www.canva.in/)  
-> *(Insert your specific Canva project link here: `https://www.canva.com/design/...`)*
-
-### Storyboard Core Pillars
-1. **User Empathy Mapping:** Modeled after three real-world customer personas — *The Time-Sensitive Professional* needing precise delivery windows, *The Distressed Receiver* with a damaged package, and *The Remote Purchaser* dealing with unexpected transit delays.
-2. **Conversation Flow Blueprint:** End-to-end flowchart from entry greeting to resolution, identifying decision branches, entity capture nodes, and escalation triggers.
-3. **Intent-Entity Interaction Topology:** Visual cross-walk correlating user utterance intents with slot parameters (`@Order_ID`, `@Issue_type`, `@Delivery_Slot`).
-4. **Error Recovery Schematics:** Explicitly diagrammed fail-safes demonstrating how the bot handles missing parameters, invalid tracking formats, and intent misclassifications.
+* Provide 24/7 self-service order tracking with zero queue wait time.
+* Validate consignment numbers dynamically through regex patterns before querying tracking endpoints.
+* Guide customers through self-healing loops when an order identifier is entered incorrectly, preventing broken conversations.
+* Diagnose transit delays and explain the underlying operational reason (such as weather, traffic, or hub transfers).
+* Enable direct delivery window rescheduling and cancellation requests for eligible consignments.
+* Automate claim logging for damaged or missing parcels by initiating replacement dispatches or refund claims.
+* Provide seamless handoff transitions to human customer service officers whenever an issue falls outside automated resolution parameters.
 
 ---
 
-## 🏗️ System Architecture & State Machine
+## Visual Storyboard and Infographic
 
-FleetFix AI is built on Google Dialogflow ES, leveraging custom entity recognition, hierarchical context lifecycles, and nested child fallback structures.
+The conversational flows, user journey blueprints, and empathy models for FleetFix AI were conceptualized during the FA-1 design phase and mapped out visually in Canva.
+
+The complete visual design, storyboard diagrams, and infographic presentation are available directly through the project canvas:
+
+[Open FleetFix AI Storyboard and Infographic on Canva](https://www.canva.com/design/DAHV_ZklCrQ/WlejQFSclYynTTUOFVhpsg/edit)
+
+The storyboard document establishes four essential design pillars:
+
+* **User Personas and Empathy Mapping:** Focused on the immediate needs of recipients who require precise ETA updates, customers who received damaged goods, and users needing to adjust their delivery schedules.
+* **Conversation Flow Blueprint:** Complete branching diagrams capturing every conversational state from greeting and slot extraction to final issue resolution.
+* **Intent-Entity Cross-Walk:** Structural mapping that links user utterances to target entities such as `@Order_ID`, `@Issue_type`, and `@Delivery_Slot`.
+* **Error Recovery Schematics:** Architectural safeguards specifying how the bot handles missing input parameters, invalid tracking syntax, and ambiguous user phrasing.
+
+---
+
+## System Architecture and State Machine
+
+FleetFix AI runs on Google Dialogflow ES, utilizing custom entity models, context lifespan control, and nested child fallback structures.
 
 ```mermaid
 flowchart TD
@@ -84,26 +88,20 @@ flowchart TD
     NextStep --> FollowUpFlow[Replacement / Refund Action]
 ```
 
-### The Two-Tier Context Loop Algorithm
+### Two-Tier Context Loop Algorithm
 
-Standard slot-filling implementations often suffer from premature errors, where conversational platforms issue validation error messages before the user is given an opportunity to enter the parameter. 
+Standard slot-filling setups in conversational systems frequently encounter an issue known as premature validation: when a slot is marked required and given multiple prompts, the platform can randomly surface an error prompt before the customer has even made their first attempt to type the information.
 
-FleetFix AI implements a **Two-Tier Context State Machine** that resolves this issue deterministically:
+To eliminate this vulnerability, FleetFix AI uses a deterministic two-tier context state machine:
 
-1. **Parent Intent Stage:**
-   - The user triggers a functional intent (e.g., `Get_order_status`, `Check_delivery_delay`, `Report_damaged_orders`).
-   - If an `@Order_ID` is present in the initial message, the parent intent processes it immediately.
-   - If missing, the parent intent issues a conversational prompt requesting the ID and assigns an **Output Context** (e.g., `Track_order-followup`, `check_delay-followup`) with a lifespan of `2`.
+1. **Parent Intent Execution:**  
+   When an intent like `Track_order` or `Check_delivery_delay` is matched without an order identifier, the parent intent responds with an inviting prompt and outputs an active tracking context (e.g., `Track_order-followup`) with a lifespan of 2.
 
-2. **Child Provide-ID Intent (`provide_id`):**
-   - Requires the parent's output context as its **Input Context**.
-   - Configured with a training phrase schema mapped exclusively to `@Order_ID`.
-   - Fires **only** when the user's input matches the expected tracking regex, returning live parcel telemetry, transit updates, or resolution actions.
+2. **Regex-Matched Child Intent (`provide_id`):**  
+   The child intent requires the parent's context as its input context. Its training phrases are exclusively mapped to the `@Order_ID` regex entity. When the user provides a valid tracking code, this intent fires immediately to deliver the parcel telemetry.
 
-3. **Child Fallback Intent (`fallback`):**
-   - Configured with the same **Input Context** and marked with `"fallbackIntent": true`.
-   - Intercepts any utterance submitted within that active context that **fails** the `@Order_ID` regex.
-   - Outputs a helpful format correction notice, displays valid pattern examples (`FFX123456`, `fdh3992343`), and **renews the context lifespan**, keeping the user in the loop until a valid identifier is received.
+3. **Contextual Child Fallback Intent (`fallback`):**  
+   A dedicated child fallback intent is assigned the same input context with `"fallbackIntent": true`. When an input fails regex matching, this fallback catches the error, outputs an informative message explaining the valid format, and refreshes the context lifespan so the user can re-enter their ID without losing the session flow.
 
 ```mermaid
 sequenceDiagram
@@ -134,34 +132,30 @@ sequenceDiagram
 
 ---
 
-## 🔍 NLP Specifications: Custom Entities & Regex Rules
+## NLP Specifications: Entities and Regex Rules
 
-FleetFix AI utilizes six custom entity models to extract structured parameters from unstructured natural language:
+FleetFix AI utilizes six custom entity models to extract structured parameters from conversational text:
 
 | Entity Name | Storage Type | Regex Pattern / Synonym Set | Purpose & Application |
 |---|---|---|---|
-| **`@Order_ID`** | Regexp Entity | `FF[XZ][0-9]{6}`<br>`[A-Z]{3}[0-9]{6}`<br>`[A-Za-z]{2,4}[0-9]{5,8}` | Primary tracking key. Matches SwiftShip standard tags (`FFX102938`), regional tags (`EXP839201`), and partner courier formats (`fdh3992343`). |
-| **`@Issue_type`** | List / Enum | `damaged`, `broken`, `crushed`, `delayed`, `late`, `missing`, `lost`, `stolen`, `wrong item`, `tampered` | Identifies customer problem category to route dialogue into appropriate operational branches. |
-| **`@Delivery_Status`** | List / Enum | `Out for delivery`, `In transit`, `Dispatched`, `Delayed`, `Delivered`, `Returned to hub`, `Pending` | Synchronizes telemetry state messages with simulated warehouse database entries. |
-| **`@Cancellation_Reason`** | List / Enum | `Found cheaper elsewhere`, `Delivery took too long`, `Ordered by mistake`, `Incorrect delivery address`, `Duplicate order` | Captures qualitative cancellation feedback for business analytics. |
-| **`@Delivery_Slot`** | List / Enum | `Morning (9 AM - 12 PM)`, `Afternoon (12 PM - 4 PM)`, `Evening (4 PM - 8 PM)`, `Weekend Delivery` | Enables self-service rescheduling into standardized carrier dispatch windows. |
-| **`@Item_Category`** | List / Enum | `Electronics`, `Fragile Goods`, `Perishables`, `Documents & Contracts`, `Apparel`, `Heavy Machinery` | Determines priority handling, fragile item claim validation, and inspection criteria. |
+| `@Order_ID` | Regexp Entity | `FF[XZ][0-9]{6}`<br>`[A-Z]{3}[0-9]{6}`<br>`[A-Za-z]{2,4}[0-9]{5,8}` | Validates consignment keys: SwiftShip express tags (`FFX102938`), ground freight tags (`FFZ849201`), partner carriers (`EXP839201`), and legacy identifiers (`fdh3992343`). |
+| `@Issue_type` | List / Enum | `damaged`, `broken`, `crushed`, `delayed`, `late`, `missing`, `lost`, `stolen`, `wrong item`, `tampered` | Classifies the problem category to direct the interaction into proper operational pathways. |
+| `@Delivery_Status` | List / Enum | `Out for delivery`, `In transit`, `Dispatched`, `Delayed`, `Delivered`, `Returned to hub`, `Pending` | Identifies delivery milestones and maps them to simulated logistics events. |
+| `@Cancellation_Reason` | List / Enum | `Found cheaper elsewhere`, `Delivery took too long`, `Ordered by mistake`, `Incorrect delivery address`, `Duplicate order` | Captures cancellation rationale for business operations reporting. |
+| `@Delivery_Slot` | List / Enum | `Morning (9 AM - 12 PM)`, `Afternoon (12 PM - 4 PM)`, `Evening (4 PM - 8 PM)`, `Weekend Delivery` | Facilitates delivery rescheduling into pre-defined dispatch windows. |
+| `@Item_Category` | List / Enum | `Electronics`, `Fragile Goods`, `Perishables`, `Documents & Contracts`, `Apparel`, `Heavy Machinery` | Supports priority tagging and determines inspection guidelines for damage claims. |
 
-### Regex Breakdown for `@Order_ID`
-* `FF[XZ][0-9]{6}`:
-  - `FF`: SwiftShip proprietary carrier prefix ("FleetFix").
-  - `[XZ]`: Differentiates express (`X`) vs. zone-based ground freight (`Z`).
-  - `[0-9]{6}`: Six-digit serialized consignment number (e.g., `FFX492018`).
-* `[A-Z]{3}[0-9]{6}`:
-  - Three uppercase letters representing regional air/rail cargo integration partners followed by a 6-digit consignment index.
-* `[A-Za-z]{2,4}[0-9]{5,8}`:
-  - Case-insensitive general fallback supporting alphanumeric courier references from retail marketplace integrations.
+### Regex Patterns Configured for `@Order_ID`
+
+* `FF[XZ][0-9]{6}` matches standard SwiftShip consignments where the `FF` prefix denotes FleetFix, followed by `X` (express air/van) or `Z` (ground freight), and a six-digit unique dispatch serial.
+* `[A-Z]{3}[0-9]{6}` accommodates integrated freight partners using three uppercase regional airline/railroad carrier codes followed by six numbers.
+* `[A-Za-z]{2,4}[0-9]{5,8}` provides a flexible case-insensitive pattern for external courier systems and e-commerce partner orders.
 
 ---
 
-## 🗺️ Complete Intent Matrix & Dialog Routing
+## Intent Topology and Conversation Routing
 
-The conversational engine encompasses **22 discrete intents** organized into hierarchical functional clusters:
+The agent includes 22 intents structured into functional operational clusters:
 
 ```
 FleetFix AI Intent Architecture
@@ -174,11 +168,11 @@ FleetFix AI Intent Architecture
 │   ├── Track_order - provide_id (Child Match)
 │   ├── Track_order - fallback (Child Reprompt)
 │   └── Track_order - custom
-├── Delay & Exception Management
+├── Delay and Exception Management
 │   ├── Check_delivery_delay (Parent)
 │   ├── Check_delivery_delay - provide_id (Child Match)
 │   └── Check_delivery_delay - fallback (Child Reprompt)
-├── Damage & Return Claims
+├── Damage and Return Claims
 │   ├── Report_damaged_orders (Parent)
 │   ├── Report_damaged_orders - provide_id (Child Match)
 │   ├── Report_damaged_orders - fallback (Child Reprompt)
@@ -189,7 +183,7 @@ FleetFix AI Intent Architecture
 │   ├── Replacement_request (Parent)
 │   ├── Replacement_request - provide_id (Child Match)
 │   └── Replacement_request - fallback (Child Reprompt)
-├── Rescheduling & Logistics Updates
+├── Rescheduling and Delivery Adjustments
 │   ├── Reschedule_delivery (Parent)
 │   ├── Reschedule_delivery - provide_id (Child Match)
 │   └── Reschedule_delivery - fallback (Child Reprompt)
@@ -203,31 +197,32 @@ FleetFix AI Intent Architecture
 
 ### Context Topology Table
 
-| Intent Display Name | Type | Input Context | Output Context (Lifespan) | Action / Trigger Condition |
+| Intent Display Name | Type | Input Context | Output Context (Lifespan) | Trigger Condition & Role |
 |---|---|---|---|---|
-| `Default Welcome Intent` | Root | *None* | *None* | Greets user, establishes assistant persona, outlines capabilities. |
-| `Track_order` | Parent | *None* | `Track_order-followup` (2) | Receives tracking inquiry; prompts for ID if omitted. |
-| `Track_order - provide_id` | Child | `Track_order-followup` | *None* | Matches `@Order_ID`; returns real-time consignment status. |
-| `Track_order - fallback` | Child | `Track_order-followup` | `Track_order-followup` (2) | Catches non-matching token; shows format guide; reprompts. |
-| `Check_delivery_delay` | Parent | *None* | `Check_delivery_delay-followup` (2) | Diagnoses delay reasons (weather, transit, routing). |
-| `Check_delivery_delay - provide_id` | Child | `Check_delivery_delay-followup` | *None* | Delivers updated ETA and delay root cause. |
-| `Check_delivery_delay - fallback` | Child | `Check_delivery_delay-followup` | `Check_delivery_delay-followup` (2) | Re-requests valid tracking reference for delay check. |
-| `Report_damaged_orders` | Parent | *None* | `Report_damaged_orders-followup` (2) | Initiates damage claim protocol; requests tracking code. |
-| `Report_damaged_orders - provide_id` | Child | `Report_damaged_orders-followup` | `damage-reported` (2) | Verifies package receipt; prompts for refund or replacement. |
-| `Report_damaged_orders - fallback` | Child | `Report_damaged_orders-followup` | `Report_damaged_orders-followup` (2) | Reprompts for valid tracking reference. |
-| `Replacement_request` | Parent | *None* | `Replacement_request-followup` (2) | Direct replacement request; prompts for consignment ID. |
-| `Replacement_request - provide_id` | Child | `Replacement_request-followup` | *None* | Generates zero-cost replacement dispatch order. |
-| `Reschedule_delivery` | Parent | *None* | `Reschedule_delivery-followup` (2) | Initiates delivery slot adjustment workflow. |
-| `Reschedule_delivery - provide_id` | Child | `Reschedule_delivery-followup` | *None* | Confirms new delivery window selection. |
-| `Cancel_order` | Parent | *None* | `Cancel_order-followup` (2) | Checks consignment dispatch state; processes cancellation. |
-| `Cancel_order - provide_id` | Child | `Cancel_order-followup` | *None* | Executes cancellation if package has not left terminal. |
-| `Connect_me_with_agent` | Escalation | *None* | *None* | Transfers session to human representative queue. |
+| `Default Welcome Intent` | Root | None | None | Greets customer, introduces capabilities, suggests actions. |
+| `Track_order` | Parent | None | `Track_order-followup` (2) | Catches tracking requests and prompts for consignment ID. |
+| `Track_order - provide_id` | Child | `Track_order-followup` | None | Triggers on valid `@Order_ID` regex match to return package telemetry. |
+| `Track_order - fallback` | Child | `Track_order-followup` | `Track_order-followup` (2) | Catches non-matching input, displays format guidance, and reprompts. |
+| `Check_delivery_delay` | Parent | None | `Check_delivery_delay-followup` (2) | Queries shipment delay root causes and ETA adjustments. |
+| `Check_delivery_delay - provide_id` | Child | `Check_delivery_delay-followup` | None | Returns verified delay reason and updated delivery window. |
+| `Check_delivery_delay - fallback` | Child | `Check_delivery_delay-followup` | `Check_delivery_delay-followup` (2) | Renews context and reprompts for tracking number. |
+| `Report_damaged_orders` | Parent | None | `Report_damaged_orders-followup` (2) | Opens a damage claim and requests order reference. |
+| `Report_damaged_orders - provide_id` | Child | `Report_damaged_orders-followup` | `damage-reported` (2) | Confirms delivery and offers replacement or refund choices. |
+| `Report_damaged_orders - fallback` | Child | `Report_damaged_orders-followup` | `Report_damaged_orders-followup` (2) | Prompts for valid order identifier. |
+| `Replacement_request` | Parent | None | `Replacement_request-followup` (2) | Initiates replacement workflow for broken or defective orders. |
+| `Replacement_request - provide_id` | Child | `Replacement_request-followup` | None | Books a zero-charge replacement order for delivery. |
+| `Reschedule_delivery` | Parent | None | `Reschedule_delivery-followup` (2) | Opens calendar slot options for shipment delivery. |
+| `Reschedule_delivery - provide_id` | Child | `Reschedule_delivery-followup` | None | Confirms updated slot selection in the dispatch system. |
+| `Cancel_order` | Parent | None | `Cancel_order-followup` (2) | Checks shipment stage and executes cancellation if unfulfilled. |
+| `Cancel_order - provide_id` | Child | `Cancel_order-followup` | None | Processes cancellation and triggers refund initiation. |
+| `Connect_me_with_agent` | Escalation | None | None | Routes session to human agent desk with context summary. |
 
 ---
 
-## 💬 End-to-End User Journeys
+## End-to-End User Journeys
 
-### User Journey 1: Parcel Tracking with Validation Error & Self-Healing Loop
+### User Journey 1: Parcel Tracking with Error Recovery Loop
+
 ```
 Customer : "Hey there, where is my package?"
 FleetFix : "Hello! I can definitely pull up your package status. Could you please provide your Order ID?"
@@ -239,7 +234,8 @@ Customer : "No, that's great! Thank you."
 FleetFix : "You're very welcome! Thanks for choosing SwiftShip Logistics. Have a wonderful day!"
 ```
 
-### User Journey 2: Damaged Parcel Report & Replacement Dispatch
+### User Journey 2: Damaged Parcel Report and Replacement Booking
+
 ```
 Customer : "My package arrived completely crushed and the item inside is broken!"
 FleetFix : "I am very sorry to hear that! Let's get this resolved immediately. What is the Order ID on the shipping label?"
@@ -251,7 +247,8 @@ Customer : "Perfect, thank you for making that painless."
 FleetFix : "Always glad to help! You'll receive live SMS updates as soon as the replacement leaves the facility."
 ```
 
-### User Journey 3: Transit Delay Diagnostic & Delivery Window Rescheduling
+### User Journey 3: Transit Delay Diagnostic and Delivery Rescheduling
+
 ```
 Customer : "Why hasn't my order arrived yet? It was supposed to be here yesterday."
 FleetFix : "I understand your frustration with delivery delays. Let me check the transport telemetry for you. Could you share your Order ID?"
@@ -263,14 +260,14 @@ FleetFix : "All set! Order EXP384920 is now locked in for tomorrow's Morning Slo
 
 ---
 
-## 📂 Repository Structure & Package Hierarchy
+## Repository Structure and Directory Layout
 
 ```
 IDAI101-1000544-PARTH-PARVINBHAI-GAJERA/
-├── README.md                                    # Architectural system documentation
+├── README.md                                    # System architecture and technical documentation
 ├── agent.json                                   # Dialogflow ES root agent configuration
-├── package.json                                 # Dialogflow package schema definition
-├── entities/                                    # Entity schema definitions & dictionaries
+├── package.json                                 # Package schema specification
+├── entities/                                    # Entity definitions and value entries
 │   ├── Cancellation_Reason.json
 │   ├── Cancellation_Reason_entries_en.json
 │   ├── Delivery_Slot.json
@@ -281,9 +278,9 @@ IDAI101-1000544-PARTH-PARVINBHAI-GAJERA/
 │   ├── Issue_type_entries_en.json
 │   ├── Item_Category.json
 │   ├── Item_Category_entries_en.json
-│   ├── Order_ID.json                            # Regex entity configuration
-│   └── Order_ID_entries_en.json                 # Regex pattern specifications
-└── intents/                                     # Intent definitions & training utterances
+│   ├── Order_ID.json                            # Regular expression entity configuration
+│   └── Order_ID_entries_en.json                 # Regular expression pattern sets
+└── intents/                                     # Intent definitions and training phrases
     ├── Default Welcome Intent.json
     ├── Default Welcome Intent_usersays_en.json
     ├── Default Fallback Intent.json
@@ -326,9 +323,9 @@ IDAI101-1000544-PARTH-PARVINBHAI-GAJERA/
 
 ---
 
-## 🚀 Deployment & Installation Guide
+## Deployment and Setup Instructions
 
-To restore or run this conversational agent in Google Cloud Dialogflow ES:
+To deploy or restore the agent in Google Dialogflow ES:
 
 1. **Clone the Repository:**
    ```bash
@@ -336,27 +333,26 @@ To restore or run this conversational agent in Google Cloud Dialogflow ES:
    cd IDAI101-1000544-PARTH-PARVINBHAI-GAJERA
    ```
 
-2. **Package the Agent Archive:**
-   Compress `agent.json`, `package.json`, the `entities/` folder, and the `intents/` folder into a single ZIP archive:
+2. **Generate the Dialogflow Archive:**
+   Compress `agent.json`, `package.json`, and the `entities/` and `intents/` directories into a standard zip archive:
    ```powershell
    Compress-Archive -Path agent.json, package.json, entities, intents -DestinationPath FleetFix_AI_Agent.zip -Force
    ```
 
-3. **Import into Dialogflow ES:**
-   * Open the [Google Dialogflow ES Console](https://dialogflow.cloud.google.com/).
-   * Create a new agent (e.g., `FleetFix-AI-Logistics`).
-   * Navigate to **Settings (Gear Icon) > Export and Import**.
-   * Click **Restore from Zip** (or *Import from Zip*), select `FleetFix_AI_Agent.zip`, and confirm.
-   * Allow Dialogflow NLU engine to complete model training.
+3. **Import to Dialogflow ES Console:**
+   * Open the Google Dialogflow ES console.
+   * Create an agent instance (e.g., `FleetFix-AI-Logistics`).
+   * Navigate to Agent Settings (gear icon) > Export and Import.
+   * Choose Restore from Zip (or Import from Zip) and upload `FleetFix_AI_Agent.zip`.
+   * Allow the NLU model to complete its training pass.
 
-4. **Test in the Simulator:**
-   * Use the right-hand **Try It Now** console to execute verification utterances:
-     - *"Track my parcel"* -> Enter invalid text -> Verify fallback -> Enter `FFX102938` -> Verify status.
-     - *"My package arrived damaged"* -> Enter `FFZ998877` -> Request replacement.
+4. **Verify Behavior in the Test Simulator:**
+   * Test tracking recovery: type "Track my parcel", reply with an arbitrary text string, confirm that the fallback reprompt triggers, then reply with a valid ID such as `FFX102938`.
+   * Test damage handling: type "My package arrived damaged", provide `FFZ998877`, and confirm the refund or replacement branch.
 
 ---
 
-## 👥 Contributors & Academic Metadata
+## Contributors & Academic Metadata
 
 | Role | Name | Candidate Registration No. | Email |
 |---|---|---|---|
@@ -366,14 +362,3 @@ To restore or run this conversational agent in Google Cloud Dialogflow ES:
 * **Course Name:** Artificial Intelligence: Real-World Applications and Implications (`IDAI101`)
 * **Academic Evaluation:** Formative Assessment-2 (FA-2) — Practical Implementation & Deployment
 * **Scenario Context:** SwiftShip Logistics Pvt. Ltd. (Customer Experience & Dispatch Automation)
-
----
-
-## 📋 Rubric & Assessment Criteria Mapping
-
-| Assessment Criteria (Rubrics) | Expected Benchmark | Project Evidence & Implementation in FleetFix AI | Achievement Level |
-|---|---|---|---|
-| **Problem Understanding & User Research** *(5 Marks)* | Deep understanding of logistics friction; defined user problems, goals, and chatbot role. | Detailed logistics operational analysis covering WISMO queries (45–60% of volume), last-mile dispatch issues, and transit exceptions for SwiftShip Logistics. | **Distinguished (5/5)** |
-| **Storyboard Design & Conversation Flow** *(5 Marks)* | Complete, structured storyboard with all required flows (welcome, tracking, delay, complaint, escalation). | Complete state machine with 3 Mermaid architecture diagrams, 2-tier context loops, self-healing reprompting, and Canva storyboard mapping. | **Distinguished (5/5)** |
-| **Intents & Entities Definition** *(5 Marks)* | 10+ intents and 5+ entities clearly defined with examples and logistics alignment. | **22 discrete intents** across 6 operational clusters, plus **6 custom entities** including regex-powered `@Order_ID` engine. | **Distinguished (5/5)** |
-| **User Journeys & Presentation** *(5 Marks)* | 3+ complete user journeys demonstrating end-to-end interactions and clean presentation. | 3 complete, step-by-step conversational dialogues illustrating normal resolution, validation error recovery, and damage replacements. | **Distinguished (5/5)** |
