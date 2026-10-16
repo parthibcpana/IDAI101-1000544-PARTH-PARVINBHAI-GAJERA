@@ -360,5 +360,5 @@ To deploy or restore the agent in Google Dialogflow ES:
 | **Project Contributor** | Subhaan Imamuddin Syed | **1000545** | — |
 
 * **Course Name:** Artificial Intelligence: Real-World Applications and Implications (`IDAI101`)
-* **Academic Evaluation:** Formative Assessment-2 (FA-2) — Practical Implementation & Deployment
+* **Academic Evaluation:** Formative Assessment - 2 (FA-2) — Practical Implementation & Deployment
 * **Scenario Context:** SwiftShip Logistics Pvt. Ltd. (Customer Experience & Dispatch Automation)
